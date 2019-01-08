@@ -2,6 +2,8 @@ import React from "react"
 
 import styled from "styled-components"
 
+import { Button } from "reactstrap"
+
 const mainStyle = {
   color: "yellow",
   background: "black",
@@ -17,6 +19,8 @@ const Content = () => (
     <Paragraph>
       Learning React with Ancalagon together is better #McQueenYaQueen
     </Paragraph>
+    <Button color="primary">Get Started</Button>
+    <Button color="danger">Danger</Button>
   </main>
 )
 
