@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 
+import { Link } from "react-router-dom"
+
 import styled from "styled-components"
 
 const NavigationBar = styled.header`
@@ -25,9 +27,15 @@ class Header extends Component {
       <NavigationBar>
         <Title>Learn React</Title>
         <NavigationLinks>
-          <li>Home</li>
-          <li>About</li>
-          <li>Random</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/random">Random</Link>
+          </li>
         </NavigationLinks>
       </NavigationBar>
     )
