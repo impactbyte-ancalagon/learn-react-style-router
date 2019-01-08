@@ -1,16 +1,12 @@
 import React, { Component } from "react"
-
 import { Link } from "react-router-dom"
-
 import styled from "styled-components"
+
+import Logo from "../Logo"
 
 const NavigationBar = styled.header`
   font-size: 1.5em;
   text-align: center;
-`
-
-const Title = styled.h1`
-  color: palevioletred;
 `
 
 const NavigationLinks = styled.ul`
@@ -25,7 +21,7 @@ class Header extends Component {
   render() {
     return (
       <NavigationBar>
-        <Title>Learn React</Title>
+        <Logo />
         <NavigationLinks>
           <li>
             <Link to="/">Home</Link>

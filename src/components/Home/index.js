@@ -1,8 +1,8 @@
 import React from "react"
-
 import styled from "styled-components"
-
 import { Button } from "reactstrap"
+
+import Page from "../Page"
 
 const mainStyle = {
   color: "yellow",
@@ -15,13 +15,15 @@ const Paragraph = styled.p`
 `
 
 const Content = () => (
-  <main style={mainStyle}>
-    <Paragraph>
-      Learning React with Ancalagon together is better #McQueenYaQueen
-    </Paragraph>
-    <Button color="primary">Get Started</Button>
-    <Button color="danger">Danger</Button>
-  </main>
+  <Page>
+    <main style={mainStyle}>
+      <Paragraph>
+        Learning React with Ancalagon together is better #McQueenYaQueen
+      </Paragraph>
+      <Button color="primary">Get Started</Button>
+      <Button color="danger">Danger</Button>
+    </main>
+  </Page>
 )
 
 export default Content

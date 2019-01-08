@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
-import Header from "./components/Header"
 import Home from "./components/Home"
 import About from "./components/About"
 import Random from "./components/Random"
@@ -12,12 +11,11 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
-          <Header />
+        <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" exact component={About} />
           <Route path="/random" exact component={Random} />
-        </div>
+        </Switch>
       </Router>
     )
   }

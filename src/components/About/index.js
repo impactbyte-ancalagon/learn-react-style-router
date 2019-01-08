@@ -1,9 +1,11 @@
 import React from "react"
 
+import Page from "../Page"
+
 const About = () => (
-  <main>
+  <Page>
     <p>About This Web</p>
-  </main>
+  </Page>
 )
 
 export default About
